@@ -8,7 +8,8 @@
 
 import UIKit
 
-protocol RootViewControllerDelegate: class {
+@MainActor
+protocol RootViewControllerDelegate: AnyObject {
     func rootViewControllerDidTapMenuButton(_ rootViewController: RootViewController)
 }
 
